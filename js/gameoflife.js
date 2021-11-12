@@ -82,18 +82,22 @@ const iterate = (state, iterations) => {
     return states;
 };
 
+
+
 const main = (pattern, iterations) => {
   const results = iterate(startPatterns[pattern], iterations);
   results.forEach(r => console.log(printCells(r)));
 }; 
 const startPatterns = {
   rpentomino: [
+    
     [3, 2],
     [2, 3],
     [3, 3],
     [3, 4],
     [4, 4]
   ],
+
   glider: [
     [-2, -2],
     [-1, -2],
